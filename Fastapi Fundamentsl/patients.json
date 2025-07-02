@@ -1,0 +1,42 @@
+{
+  "P001": {
+    "name": "John Smith",
+    "city": "New York",
+    "age": 34,
+    "gender": "Male",
+    "height": 175.5,
+    "weight": 72.3,
+    "bmi": 23.5,
+    "verdict": "Normal weight"
+  },
+  "P002": {
+    "name": "Sarah Johnson",
+    "city": "Los Angeles",
+    "age": 28,
+    "gender": "Female",
+    "height": 162.0,
+    "weight": 58.7,
+    "bmi": 22.4,
+    "verdict": "Normal weight"
+  },
+  "P003": {
+    "name": "Michael Brown",
+    "city": "Chicago",
+    "age": 45,
+    "gender": "Male",
+    "height": 182.3,
+    "weight": 95.2,
+    "bmi": 28.7,
+    "verdict": "Overweight"
+  },
+  "P005": {
+    "name": "David Wilson",
+    "city": "Phoenix",
+    "age": 39,
+    "gender": "Male",
+    "height": 178.6,
+    "weight": 108.4,
+    "bmi": 34.0,
+    "verdict": "Obese"
+  }
+}
