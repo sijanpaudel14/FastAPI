@@ -58,11 +58,13 @@ if st.button("Get Item"):
 ## Running the Application
 
 ### Start FastAPI server:
+
 ```bash
 uvicorn main:app --reload
 ```
 
 ### Start Streamlit app:
+
 ```bash
 streamlit run streamlit_app.py
 ```
@@ -72,3 +74,58 @@ streamlit run streamlit_app.py
 - Interactive API docs: `http://127.0.0.1:8000/docs`
 - Alternative docs: `http://127.0.0.1:8000/redoc`
 - Streamlit app: `http://localhost:8501`
+
+# ✅ Project Update Summary – Model API Improvements
+
+**🕒 Timeline:** `4:13 – 40:34`  
+**📦 Commit Scope:** Modularization, validation, confidence scoring, route enhancements
+
+---
+
+## 📁 1. Created New Folder Structure
+
+- Organized the project into modular folders for maintainability.
+- Separated concerns: `model/`, `routes/`, `schemas/`, etc.
+
+## 🛡️ 2. Added Field Validator for City Input
+
+- Implemented `@field_validator` to normalize city input.
+- Ensures consistent casing and formatting before model processing.
+
+## 🌐 3. Added Routes
+
+- `/` → Home route.
+- `/health` → Health check route to monitor server status.
+
+## 🧠 4. Embedded Model Versioning
+
+- Added a model version string to prediction response.
+- Useful for debugging and version control of deployed models.
+
+## ⚙️ 5. Separated Core Logic
+
+- Moved different responsibilities to their own files:
+  - `pydantic_model.py` → Request model validation.
+  - `city_tier.py` → Tier classification logic.
+  - `predict.py` → Machine learning inference.
+
+## 🚨 6. Added Try-Except Error Handling
+
+- Wrapped inference code in try-catch blocks.
+- Prevents API from crashing on bad inputs or internal errors.
+
+## 📈 7. Confidence Score Integration
+
+- Included `predict_proba()` output in API response (if available).
+- Helps understand prediction certainty.
+
+## 🧾 8. Introduced Response Model
+
+- Used a Pydantic response schema for cleaner, documented API responses.
+
+## ✅ 9. Final Testing and Confirmation
+
+- Successfully tested all routes with valid/invalid inputs.
+- Verified API responses and stability.
+
+---
