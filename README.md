@@ -75,10 +75,11 @@ streamlit run streamlit_app.py
 - Alternative docs: `http://127.0.0.1:8000/redoc`
 - Streamlit app: `http://localhost:8501`
 
+
+
 # ✅ Project Update Summary – Model API Improvements
 
-**🕒 Timeline:** `4:13 – 40:34`  
-**📦 Commit Scope:** Modularization, validation, confidence scoring, route enhancements
+
 
 ---
 
